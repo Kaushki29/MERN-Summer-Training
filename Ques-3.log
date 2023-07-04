@@ -1,0 +1,14 @@
+function calc()
+    {
+       var len=prompt("Enter the length:");
+       var br=prompt("Enter the breadth");
+        var area=len*br;
+        var per=2*(parseInt(len)+parseInt(br));
+        console.log("Area= "+area);
+        console.log("Perimeter= "+per);
+    }
+undefined
+calc();
+VM1781:7 Area= 400
+VM1781:8 Perimeter= 80
+undefined

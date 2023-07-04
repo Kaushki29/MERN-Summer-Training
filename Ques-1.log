@@ -1,0 +1,17 @@
+date=new Date();
+var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var day=days[date.getDay()];
+var h=date.getHours();
+var m=date.getMinutes();
+var s=date.getSeconds();
+var set="am";
+if(h>12)
+{
+    h=h-12;
+    set="pm";
+}
+console.log("Today is: "+day);
+console.log(`Current Time is: ${h}:${m}:${s}`+set);
+VM3324:13 Today is: Sunday
+VM3324:14 Current Time is: 1:19:36pm
+undefined
