@@ -1,0 +1,14 @@
+function Validate(email)
+    {
+        if(email.includes("@"))
+        {
+            if(email.endsWith('.org') || email.endsWith('.com') || email.endsWith('.edu'))
+                return 'Valid';
+        }
+        return 'Invalid';
+    }
+undefined
+Validate("kaushki@gmail.com");
+'Valid'
+Validate("kaushkigmail.com");
+'Invalid'

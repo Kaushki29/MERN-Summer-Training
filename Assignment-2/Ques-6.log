@@ -1,0 +1,29 @@
+function addition(x)
+    {
+        var y=x;
+        var len=0;
+        while(y>0)
+            {
+                y=parseInt(y/10);
+                len++;
+            }
+        var e=0;
+        var o=0;
+        while(len>0)
+            {
+                if(len%2==0)
+                    e=e+parseInt(x%10);
+                else
+                    o=o+parseInt(x%10);
+                x=x/10;
+                len--;
+            }
+        console.log("Even sum= "+e);
+        console.log("odd sum= "+o);
+    }
+
+undefined
+addition(12345);
+VM151:21 Even sum= 6
+VM151:22 odd sum= 9
+undefined

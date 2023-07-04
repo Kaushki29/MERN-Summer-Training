@@ -1,0 +1,34 @@
+function phone(num)
+    {
+        var c=0;
+        var y=num;
+        var d;
+        while(y>0)
+            {
+                d=y%10;
+                y=parseInt(y/10);
+                if(d>=0 && d<=9)
+                {
+                    c++;
+                    continue;
+                }
+                else
+                break;
+            }
+        if(c!=10)
+            console.log("Invalid phone no.");
+        else
+            console.log("Valid phone no.");
+    }
+undefined
+phone(9123442916);
+VM1900:21 Valid phone no.
+undefined
+phone(12345)'
+VM2039:1 Uncaught SyntaxError: Invalid or unexpected token
+phone(12345);
+VM1900:19 Invalid phone no.
+undefined
+phone("123abc123456");
+VM1900:19 Invalid phone no.
+undefined
