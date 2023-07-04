@@ -1,0 +1,20 @@
+function maxmin()
+    {
+        var arr=[10,20,30,40,50];
+        var min=Number.MAX_VALUE;
+        var max=Number.MIN_VALUE;
+        for(ele of arr)
+            {
+                if(ele < min)
+                    min=ele;
+                if(ele>max)
+                    max=ele;
+            }
+        console.log("Minimum element= "+min);
+        console.log("Maximum element= "+max);
+    }
+undefined
+maxmin();
+VM731:13 Minimum element= 10
+VM731:14 Maximum element= 50
+undefined

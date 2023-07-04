@@ -1,0 +1,16 @@
+function Check(a,b,c)
+    {
+        if(a==b && a==c)
+            return true;
+        else
+            return false;
+    }
+function Triangle(e1,e2,e3,fn)
+    {
+        console.log(fn(e1,e2,e3));
+    }
+
+undefined
+Triangle(2,4,9,Check);
+VM1794:10 false
+undefined

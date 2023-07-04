@@ -1,0 +1,10 @@
+var str="BrainMentors";
+undefined
+var b=str.split('');
+undefined
+var c=b.filter(ele=>(ele=='a'||ele=='e'||ele=='i'||ele=='o'||ele=='u')?ele:0;
+VM781:1 Uncaught SyntaxError: missing ) after argument list
+var c=b.filter(ele=>(ele=='a'||ele=='e'||ele=='i'||ele=='o'||ele=='u')?ele:0);
+undefined
+c.length;
+4

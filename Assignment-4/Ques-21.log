@@ -1,0 +1,4 @@
+var arr=[1,2,3,4,5];
+var key=4;
+var a=arr.filter(ele=>ele!=key);
+undefined

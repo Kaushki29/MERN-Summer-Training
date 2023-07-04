@@ -1,0 +1,8 @@
+var a=[12,4,6,9,2,15,3,9];
+undefined
+var second=a.sort((a,b)=>b-a);
+undefined
+second;
+(8) [15, 12, 9, 9, 6, 4, 3, 2]
+second[1];
+12

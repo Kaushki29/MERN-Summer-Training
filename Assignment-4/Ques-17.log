@@ -1,0 +1,5 @@
+var st="BrainMentors";
+var arr=st.split('');
+arr.reverse();
+var s=arr.join("");
+(12) ['s', 'r', 'o', 't', 'n', 'e', 'M', 'n', 'i', 'a', 'r', 'B']

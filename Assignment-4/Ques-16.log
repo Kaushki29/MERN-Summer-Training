@@ -1,0 +1,6 @@
+var arr=[19, 22, 18, 19, 16, 18, 19, 21, 24];
+arr=arr.filter(e=>e==19);
+var s=arr.filter(e=>e==19).length;
+(3) [19, 19, 19]
+s;
+3

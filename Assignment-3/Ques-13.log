@@ -1,0 +1,46 @@
+function anagram(str1,str2)
+    {
+        var map=new Map();
+        var flag=0;
+        for(var i=0;i<str1.length;i++)
+            {
+                if(map.has(str1.charAt(i)))
+                   {
+                    var c=map.get(str1.charAt(i));
+                    map.set(str1.charAt(i),c+1);
+                }
+                else
+                    map.set(str1.charAt(i),1);
+            }
+        for(var i=0;i<str2.length;i++)
+            {
+                if(map.has(str2.charAt(i)))
+                   {
+                    var c=map.get(str2.charAt(i));
+                    if(c==1)
+                        map.delete(str2.charAt(i));
+                    else
+                        map.set(str2.charAt(i),c-1);
+                }
+                else
+                {
+                    flag=1;
+                    break;
+                }
+            }
+        if(flag==1)
+            console.log("Not Anagrams");
+        if(flag!=1 && map.size==0)
+                console.log("Not Anagrams");
+    }
+undefined
+anagrams("car","rac");
+VM1031:1 Uncaught ReferenceError: anagrams is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1031:1
+anagram("car","rac");
+VM1008:34 Not Anagrams
+undefined
+anagram("car","racecar");
+VM1008:32 Not Anagrams
+undefined
